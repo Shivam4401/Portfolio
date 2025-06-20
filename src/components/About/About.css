@@ -1,0 +1,132 @@
+#about {
+  width: 100%;
+  height: 100vh;
+  /* min-height: 100vh; */
+  /* background-color: rgb(30, 141, 104); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* gap: 30em; */
+}
+.leftabout {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding-left: 6em;
+}
+
+.rightabout {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.circle-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  background-color: rgb(17, 141, 199);
+  box-shadow: 4px 4px 20px rgb(17, 141, 199);
+}
+.line {
+  width: 2px;
+  height: 100px;
+  background-color: rgb(17, 141, 199);
+  box-shadow: 4px 4px 15px rgb(17, 141, 199);
+}
+.aboutdetails {
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+}
+.aboutdetails h1 {
+  background: linear-gradient(to right, rgb(104, 32, 100), rgb(247, 150, 150));
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 10px;
+}
+.aboutdetails span {
+  background: linear-gradient(to right, rgb(216, 136, 240), rgb(73, 122, 201));
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+.aboutdetails ul {
+  list-style: none;
+}
+.aboutdetails li {
+  color: white;
+}
+@media (max-width: 750px) {
+  #about {
+    flex-direction: column;
+    margin-top: 12em;
+  }
+  .aboutdetails h1 {
+    background: linear-gradient(
+      to right,
+      rgb(104, 32, 100),
+      rgb(247, 150, 150)
+    );
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+  }
+  .aboutdetails span {
+    background: linear-gradient(
+      to right,
+      rgb(216, 136, 240),
+      rgb(73, 122, 201)
+    );
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+  .aboutdetails ul {
+    list-style: none;
+  }
+  .aboutdetails li {
+    color: white;
+  }
+  .leftabout {
+    padding: 0;
+  }
+  .personalInfo {
+    color: red;
+    border: 2px solid red;
+  }
+  .personalInfo li {
+    border: 2px solid red;
+  }
+}
+@media (min-width: 750px) and (max-width: 1150px) {
+  .leftabout {
+    padding: 3em;
+  }
+  .aboutdetails h1 {
+    font-size: 1.5rem;
+  }
+  .aboutdetails span {
+    font-size: 0.8rem;
+  }
+  .aboutdetails li {
+    font-size: 0.8rem;
+    display: block;
+  }
+}
