@@ -18,42 +18,36 @@ const About = () => {
         <div className="aboutdetails">
           <div className="personalInfo">
             <h1>Personal Info</h1>
-            <ul>
-              <li>
-                <span>NAME</span> : SHIVAM KUMAR
-              </li>
-              <li>
-                <span>AGE</span> : 24 YEARS
-              </li>
-              <li>
-                <span>GENDER</span> : MALE
-              </li>
-              <li>
-                <span>LANGUAGE</span> : HINDI, ENGLISH
-              </li>
-            </ul>
+            <p>
+              <span>NAME</span> : SHIVAM KUMAR
+            </p>
+            <p>
+              <span>AGE</span> : 24 YEARS
+            </p>
+            <p>
+              <span>GENDER</span> : MALE
+            </p>
+            <p>
+              <span>LANGUAGE</span> : HINDI, ENGLISH
+            </p>
           </div>
           <div className="education">
             <h1>Education</h1>
-            <ul>
-              <li>
-                <span>DEGREE</span> : B.TECH
-              </li>
-              <li>
-                <span>BRANCH</span> : COMPUTER SCIENCE & ENGINEERING
-              </li>
-              <li>
-                <span>CGPA</span> : 8.89
-              </li>
-            </ul>
+            <p>
+              <span>DEGREE</span> : B.TECH
+            </p>
+            <p>
+              <span>BRANCH</span> : COMPUTER SCIENCE & ENGINEERING
+            </p>
+            <p>
+              <span>CGPA</span> : 8.89
+            </p>
           </div>
           <div className="skills">
             <h1>Skills</h1>
-            <ul>
-              <li>MERN STACK DEVELOPER</li>
-              <li>JAVA</li>
-              <li>DSA</li>
-            </ul>
+            <p>MERN STACK DEVELOPER</p>
+            <p>JAVA</p>
+            <p>DSA</p>
           </div>
         </div>
       </div>

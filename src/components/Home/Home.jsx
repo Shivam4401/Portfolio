@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.css";
 import manImg from "../../assets/man.png";
-import { TypingEffect } from "react-typing-effect";
 import { Typewriter } from "react-simple-typewriter";
 
 const Home = () => {

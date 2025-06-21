@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Nav.css";
 import { Link } from "react-scroll";
 
 const Nav = () => {
+  const menu = useRef();
+  const mobile = useRef();
   return (
     <>
       <nav>
@@ -48,13 +50,19 @@ const Nav = () => {
           </Link>
         </ul>
 
-        <div className="hamburger">
+        <div
+          className="hamburger"
+          ref={menu}
+          onClick={() => {
+            mobile.current.classList.toggle("activemobile");
+          }}
+        >
           <div className="ham"></div>
           <div className="ham"></div>
           <div className="ham"></div>
         </div>
 
-        <ul className="mobileMenu">
+        <ul className="mobileMenu" ref={mobile}>
           <Link
             to="home"
             smooth={true}
